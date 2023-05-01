@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>foto161696x364</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Application created during the classes of the course &quot;The Ultimate Hands-On Lightning Web Component
+&quot;</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Rent a Car</label>
+    <navType>Standard</navType>
+    <tabs>Rent_a_car</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Rent_a_Car_UtilityBar</utilityBar>
+</CustomApplication>
