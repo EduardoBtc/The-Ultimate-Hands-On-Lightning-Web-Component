@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Busca de CEP">
+        <lightning-layout multiple-rows>
+            <template if:true={showResult}>
+                <div class="slds-m-top_medium">
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="4" padding="around-medium">
+                            <lightning-input label="Rua" value={rua} read-only></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="2" padding="around-medium">
+                            <lightning-input label="Estado" value={estado} read-only></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="2" padding="around-medium">
+                            <lightning-input label="Cidade" value={cidade} read-only></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="4" padding="around-medium">
+                            <lightning-input label="IBGE" value={ibge} read-only></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="4" padding="around-medium">
+                            <lightning-map map-markers={mapMarkers}> </lightning-map>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </div>
+            </template>
+            <div class="slds-align_absolute-center">
+                <div class="slds-col">
+                    <lightning-input label="CEP" onchange={handleCepChange}></lightning-input>
+                    <div class="slds-text-align_center slds-m-around_medium">
+                        <lightning-button label="Buscar CEP" variant="brand"
+                            onclick={handleButtonClick}></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </lightning-layout>
+    </lightning-card>
+</template>
