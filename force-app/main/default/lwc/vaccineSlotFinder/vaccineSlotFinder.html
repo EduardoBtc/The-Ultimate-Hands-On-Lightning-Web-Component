@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Vaccine slot Finder">
+        <lightning-input type="search" placeholder="Pincode" slot="actions"
+            onkeyup={pincodeChangeHandler}></lightning-input>
+        <lightning-datatable data={centers} columns={dates} key-field="id" show-row-number-column hide-checkbox-column
+            f:true={hideMessage}>
+        </lightning-datatable>
+        <div if:false={hideMessage} class="slds-text-align_center slds-text-heading_medium">
+            <p>No slots found!</p>
+        </div>
+    </lightning-card>
+</template>
